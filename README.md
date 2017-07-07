@@ -12,6 +12,21 @@ npm install
 npm run ww
 ```
 
+# 학습순서
+
+원하시는데로 학습하면 되지만 아래의 순서를 추천합니다.
+
+1. 순수 vue
+2. vue 2.0 
+    2-1. vue-class-component (데코레이터 패턴)
+    2-2. .vue 확장자 파일 사용법
+3. typescript
+    3-1. typescript 문법
+    3-2. tsconfig.js
+4. webpack
+5. javascript ECMA 6+, 7 문법
+6. html 5
+
 # [loader 선택] ts-loader와 awesome-typescript 다른 점
 
 awesome-typescript-loader loader was created mostly to speed-up compilation in my own projects. Some of them are quite big and I wanted to have full control on how my files are compiled. There are three major points:

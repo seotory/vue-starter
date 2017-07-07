@@ -50,6 +50,7 @@ module.exports = {
   },
 
   // 부가적으로 사용할 플러그인 셋팅
+  // BrowserSyncPlugin은 서버를 띄우고, 변경파일이 있을시 자동으로 브라우져를 reload 시킨다.
   plugins: [
     new BrowserSyncPlugin({
       // browse to http://localhost:3000/ during development, 
