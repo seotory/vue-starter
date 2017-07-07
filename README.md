@@ -18,11 +18,11 @@ npm run ww
 
 1. 순수 vue
 2. vue 2.0 
-    2-1. vue-class-component (데코레이터 패턴)
-    2-2. .vue 확장자 파일 사용법
+  2-1. vue-class-component (데코레이터 패턴)
+  2-2. .vue 확장자 파일 사용법
 3. typescript
-    3-1. typescript 문법
-    3-2. tsconfig.js
+  3-1. typescript 문법
+  3-2. tsconfig.js
 4. webpack
 5. javascript ECMA 6+, 7 문법
 6. html 5
