@@ -5,8 +5,7 @@ import Component from 'vue-class-component'
 @Component({
   // All component options are allowed in here
   template: '<button @click="onClick">Click!</button>'
-  // template: require('./My.vue')
-  // template: require('./Hello.html')
+  // template: require('./My.vue')  // 잘못된 사용법
 })
 export default class MyComponent extends Vue {
   // Initial data can be declared as instance properties
