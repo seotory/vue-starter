@@ -16,8 +16,23 @@ module.exports = function (config) {
       module: webpackConfig.module,
       resolve: webpackConfig.resolve
     },
+    // webpack: require("./webpack.config.js"),
+    webpackMiddleware: {
+      // webpack으로 부터 발생하는 로그 차단
+      noInfo: true,
+      stats: 'errors-only'
+    },
     mime: { 'text/x-typescript': ['ts','tsx'] },
-    reporters: ['progress'],
+    reporters: ['spec', 'coverage'],
+
+    coverageReporter: {
+      dir: 'dist/coverage/',
+      reporters: [
+          { type: 'html' },
+          { type: 'text' },
+          { type: 'text-summary' }
+      ]
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

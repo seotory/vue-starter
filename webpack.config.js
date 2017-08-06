@@ -25,9 +25,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(js|ts)/,
+        include: path.resolve('src'), // instrument only testing sources with Istanbul, after ts-loader runs
+        loader: 'istanbul-instrumenter-loader',
+        query: {
+          esModules: true
+        }
+      },
+      {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
-        // loader: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/]

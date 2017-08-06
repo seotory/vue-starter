@@ -5,10 +5,20 @@
 </head>
 
 <body>
-  <h1>hi.</h1>
+   <!-- <h1>hi.</h1>  -->
   <div id="app-main">
-    <test></test>
-    <hello></hello>
+    {{ prefix(message) }}
+    </br>
+    <!-- {{ testMessage }}
+    </br> -->
+    <button @click="clickFunction">누르삼.</button>
+    
+     <button @click="listFunction">list누르삼.</button> 
+     <ul :list="list" v-for="(line, index) in list" :key="index">
+      <li>{{ line }}</li>
+    </ul>
+    <!-- <test></test>
+    <hello></hello> -->
   </div>
   <script type="text/javascript" src="./dist/bundle.js"></script>
 </body>
