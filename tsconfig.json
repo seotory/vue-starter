@@ -1,27 +1,35 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es6",
     "target": "es5",
     "moduleResolution": "node",
     "lib": [
       "dom",
       "es2015",
-      "es2015.promise"
+      "es2015.promise",
+      "es2016"
     ],
     "types": [
       "node",
-      "vue-typescript-import-dts"
+      "vue-typescript-import-dts",
+      "mocha",
+      "chai"
     ],
     // typeRoots option has been previously configured
     "typeRoots": [
       // add path to @types
-      "node_modules/@types"
+      "node_modules/@types",
+      "types"
     ],
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+    // "**/*.spec.ts"
   ],
   "compileOnSave": false
 }

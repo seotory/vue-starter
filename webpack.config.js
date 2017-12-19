@@ -1,5 +1,7 @@
 var path = require('path');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const package = require("./package.json");
 
 module.exports = {
   // webpack이 컴파일 하는 시작 지점.
